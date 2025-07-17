@@ -209,7 +209,7 @@ export default function CryptoSegments() {
 
         {/* Crypto Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {getCurrentCryptos().map((crypto, index) => (
+          {getCurrentCryptos().map((crypto) => (
             <div
               key={crypto.symbol}
               className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:border-gray-300 group"
