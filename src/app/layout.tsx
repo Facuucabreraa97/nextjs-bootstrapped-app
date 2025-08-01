@@ -1,12 +1,14 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { AuthProvider } from '@/components/auth/AuthContext'
+import SubscriptionPopup from '@/components/modules/SubscriptionPopup'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Curso de Criptomonedas - Aprende desde Cero',
-  description: 'Curso completo de criptomonedas para principiantes e intermedios. Aprende Bitcoin, Ethereum y más con expertos.',
+  title: 'ChainDojo - Trading de Criptomonedas',
+  description: 'Domina el trading de criptomonedas con nuestros cursos especializados y contenido exclusivo',
 }
 
 export default function RootLayout({
@@ -16,7 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <AuthProvider>
+          {children}
+          <SubscriptionPopup />
+        </AuthProvider>
+      </body>
     </html>
   )
 }
