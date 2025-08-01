@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///project/sandbox/user-workspace/app/layout.js"],"sourcesContent":["\"use client\";\n\nimport { SessionProvider } from \"next-auth/react\";\n\nexport default function RootLayout({ children }) {\n  return (\n    <html lang=\"es\">\n      <body>\n        <SessionProvider>\n          {children}\n        </SessionProvider>\n      </body>\n    </html>\n  );\n}\n\n"],"names":[],"mappings":";;;;AAEA;AAFA;;;AAIe,SAAS,WAAW,KAAY;QAAZ,EAAE,QAAQ,EAAE,GAAZ;IACjC,qBACE,6LAAC;QAAK,MAAK;kBACT,cAAA,6LAAC;sBACC,cAAA,6LAAC,iJAAA,CAAA,kBAAe;0BACb;;;;;;;;;;;;;;;;AAKX;KAVwB","debugId":null}}]
+}

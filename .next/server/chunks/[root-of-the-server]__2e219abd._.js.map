@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 146, "column": 0}, "map": {"version":3,"sources":["file:///project/sandbox/user-workspace/app/api/auth/%5B...nextauth%5D/route.js"],"sourcesContent":["import NextAuth from \"next-auth\";\nimport GoogleProvider from \"next-auth/providers/google\";\n\nconst handler = NextAuth({\n  providers: [\n    GoogleProvider({\n      clientId: process.env.GOOGLE_CLIENT_ID,\n      clientSecret: process.env.GOOGLE_CLIENT_SECRET,\n    }),\n  ],\n  secret: process.env.NEXTAUTH_SECRET,\n});\n\nexport { handler as GET, handler as POST };\n\n"],"names":[],"mappings":";;;;AAAA;AACA;;;AAEA,MAAM,UAAU,CAAA,GAAA,uIAAA,CAAA,UAAQ,AAAD,EAAE;IACvB,WAAW;QACT,CAAA,GAAA,qJAAA,CAAA,UAAc,AAAD,EAAE;YACb,UAAU,QAAQ,GAAG,CAAC,gBAAgB;YACtC,cAAc,QAAQ,GAAG,CAAC,oBAAoB;QAChD;KACD;IACD,QAAQ,QAAQ,GAAG,CAAC,eAAe;AACrC","debugId":null}}]
+}
