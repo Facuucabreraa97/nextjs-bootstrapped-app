@@ -3,7 +3,6 @@ services:
     name: nextjs-15-app
     env: node
     plan: free
-    rootDir: nextjs-bootstrapped-app
     buildCommand: npm run build
     startCommand: npm run start
     envVars:
